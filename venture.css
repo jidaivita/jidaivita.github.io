@@ -1,0 +1,83 @@
+.venture-intro {
+  max-width: 700px;
+  margin: -4px 0 18px;
+  color: #4d5560;
+}
+
+.venture-list {
+  border-top: 1px solid var(--line);
+}
+
+.venture-row {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.venture-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.venture-meta span {
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.venture-meta time {
+  color: #9298a1;
+  font-size: 11px;
+}
+
+.venture-row > p {
+  margin: 0;
+  color: #565e69;
+  font-size: 14px;
+}
+
+.venture-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.venture-metrics div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.venture-metrics strong {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.venture-metrics span {
+  color: #6e7580;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+@media (max-width: 820px) {
+  .venture-row {
+    grid-template-columns: 125px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .venture-metrics {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+}
+
+@media (max-width: 640px) {
+  .venture-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
