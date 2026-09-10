@@ -3,18 +3,18 @@
 .history-list{margin:0;padding-left:23px}
 .history-list>li{padding-left:2px;margin-bottom:11px}
 .history-list>li:last-child{margin-bottom:0}
-.history-list h3,.history-list h4{font-size:1rem;line-height:1.55;margin:0;font-weight:600;text-wrap:pretty}
+.history-list h3,.history-list h4{font-size:1rem;line-height:1.55;margin:0;font-weight:700;text-wrap:pretty}
 .history-list time{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .history-list p{font-size:.9375rem;line-height:1.5;margin:2px 0 0;text-wrap:pretty}
 .inline-logo{display:inline-block;width:56px;height:20px;object-fit:contain;vertical-align:-4px;margin-right:4px}
 .school-logo{width:20px;height:20px;margin-right:3px}
 .inline-brand{white-space:nowrap}
-.department{font-size:.9rem;font-weight:400}.department::before{content:" · "}
+.department{font-size:inherit;font-weight:inherit}.department::before{content:", "}
 .business-group+.business-group{margin-top:17px}
 .business-group-title{font-size:.9375rem;line-height:1.4;margin:0 0 9px;font-weight:700}
 .business-entries>li{margin-bottom:10px}
 .business-entries h4{font-size:.9375rem}
-.business-entries h4 span[lang]{font-weight:400;font-size:.875rem}
+.business-entries h4 span[lang]{font-weight:400;font-size:.875rem;white-space:nowrap}
 .business-entries p{font-size:.875rem;line-height:1.45;margin-top:2px}
 .business-entries .inline-logo{width:44px;height:18px;margin-right:3px;vertical-align:-3px}
 .business-entries .logo-taobao{width:18px}
