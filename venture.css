@@ -1,15 +1,23 @@
-.business-group+.business-group{margin-top:32px}
-.business-group-title{font-size:1.125rem;line-height:1.4;margin:0 0 22px;font-weight:700}
-.business-entries{list-style:none;margin:0;padding:0;display:grid;gap:26px}
-.organization-entry{display:grid;grid-template-columns:88px minmax(0,1fr);gap:24px;align-items:start}
-.organization-logo{height:72px;display:flex;align-items:center;justify-content:center;padding:6px 0}
-.organization-logo img{width:88px;height:60px;object-fit:contain}
-.entry-content{min-width:0}
-.entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:4px 20px;flex-wrap:wrap;margin-bottom:4px}
-.entry-heading h3,.entry-heading h4{font-size:1rem;line-height:1.5;margin:0;font-weight:700}
-.entry-heading h4 span{font-weight:400;white-space:nowrap}
-.entry-heading time{font-size:.875rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.entry-content p{max-width:82ch;font-size:.9375rem;line-height:1.65;margin:4px 0 0;text-wrap:pretty}
-.entry-content .business-role,.entry-content .entry-role{font-size:.9rem;margin-top:0}
-.business-role{color:var(--muted)}
-@media(max-width:600px){.organization-entry{grid-template-columns:56px minmax(0,1fr);gap:16px}.organization-logo{height:58px;padding:4px 0}.organization-logo img{width:56px;height:50px}.entry-heading{display:block}.entry-heading time{display:block;margin-top:3px}.entry-heading h4 span{white-space:normal}.business-entries{gap:24px}}
+.compact-section{margin-bottom:30px}
+.compact-section h2{margin-bottom:14px;padding-bottom:10px}
+.history-list{margin:0;padding-left:23px}
+.history-list>li{padding-left:2px;margin-bottom:11px}
+.history-list>li:last-child{margin-bottom:0}
+.history-list h3,.history-list h4{font-size:1rem;line-height:1.55;margin:0;font-weight:600;text-wrap:pretty}
+.history-list time{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.history-list p{font-size:.9375rem;line-height:1.5;margin:2px 0 0;text-wrap:pretty}
+.inline-logo{display:inline-block;width:56px;height:20px;object-fit:contain;vertical-align:-4px;margin-right:4px}
+.school-logo{width:20px;height:20px;margin-right:3px}
+.inline-brand{white-space:nowrap}
+.department{font-size:.9rem;font-weight:400}.department::before{content:" · "}
+.business-group+.business-group{margin-top:17px}
+.business-group-title{font-size:.9375rem;line-height:1.4;margin:0 0 9px;font-weight:700}
+.business-entries>li{margin-bottom:10px}
+.business-entries h4{font-size:.9375rem}
+.business-entries h4 span[lang]{font-weight:400;font-size:.875rem}
+.business-entries p{font-size:.875rem;line-height:1.45;margin-top:2px}
+.business-entries .inline-logo{width:44px;height:18px;margin-right:3px;vertical-align:-3px}
+.business-entries .logo-taobao{width:18px}
+.business-entries .logo-1688{width:32px}
+.business-entries .logo-wanwu{width:38px}
+@media(max-width:600px){.history-list{padding-left:18px}.history-list h3{font-size:.9375rem}.history-list p{font-size:.875rem}.history-list time{font-size:.875rem}.history-list .entry-separator{margin:0 3px}.history-list .department{display:block;margin-top:2px}.history-list .department::before{content:""}.business-entries h4{font-size:.875rem}.business-entries p{font-size:.8125rem;line-height:1.5}.business-entries .inline-logo{max-width:38px}.business-entries>li{margin-bottom:12px}.compact-section{margin-bottom:28px}}
