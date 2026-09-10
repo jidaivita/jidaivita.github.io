@@ -1,12 +1,15 @@
-.business-group+.business-group{margin-top:28px}
-.business-group-title{font-size:1.125rem;line-height:1.4;margin:0 0 18px;font-weight:700}
-.business-entries{margin:0;padding-left:23px}
-.business-entries li{padding-left:3px;margin:0 0 20px}
-.business-entries li:last-child{margin-bottom:0}
-.business-entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:8px 22px;flex-wrap:wrap;margin-bottom:5px}
-.business-entry-heading h4{font-size:1rem;line-height:1.5;margin:0;font-weight:700}
-.business-entry-heading h4 span{font-weight:400}
-.business-entry-heading time{font-size:.875rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.business-entries p{font-size:.9375rem;line-height:1.65;margin:4px 0 0}
-.business-entries .business-role{color:var(--muted);font-size:.875rem;margin-top:0}
-@media(max-width:500px){.business-entry-heading{display:block}.business-entry-heading time{display:block;margin-top:2px}}
+.business-group+.business-group{margin-top:32px}
+.business-group-title{font-size:1.125rem;line-height:1.4;margin:0 0 22px;font-weight:700}
+.business-entries{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.organization-entry{display:grid;grid-template-columns:88px minmax(0,1fr);gap:24px;align-items:start}
+.organization-logo{height:72px;display:flex;align-items:center;justify-content:center;padding:6px 0}
+.organization-logo img{width:88px;height:60px;object-fit:contain}
+.entry-content{min-width:0}
+.entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:4px 20px;flex-wrap:wrap;margin-bottom:4px}
+.entry-heading h3,.entry-heading h4{font-size:1rem;line-height:1.5;margin:0;font-weight:700}
+.entry-heading h4 span{font-weight:400;white-space:nowrap}
+.entry-heading time{font-size:.875rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.entry-content p{max-width:82ch;font-size:.9375rem;line-height:1.65;margin:4px 0 0;text-wrap:pretty}
+.entry-content .business-role,.entry-content .entry-role{font-size:.9rem;margin-top:0}
+.business-role{color:var(--muted)}
+@media(max-width:600px){.organization-entry{grid-template-columns:56px minmax(0,1fr);gap:16px}.organization-logo{height:58px;padding:4px 0}.organization-logo img{width:56px;height:50px}.entry-heading{display:block}.entry-heading time{display:block;margin-top:3px}.entry-heading h4 span{white-space:normal}.business-entries{gap:24px}}
