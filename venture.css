@@ -20,11 +20,5 @@
 .business-entries .logo-taobao{width:18px}
 .business-entries .logo-1688{width:32px}
 .business-entries .logo-wanwu{width:38px}
-.award-list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.award-card{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:16px;row-gap:8px;align-items:start;padding:20px 24px;border:1px solid #e1e6ec;border-radius:12px;box-shadow:0 1px 2px #182b4610}
-.award-card h3{margin:0;font-size:1.0625rem;line-height:1.45;font-weight:700;text-wrap:pretty}
-.award-card time{padding:3px 9px;border-radius:5px;background:#f1f4f8;color:#687b91;font-size:.875rem;line-height:1.5;font-variant-numeric:tabular-nums}
-.award-card p{grid-column:1 / -1;margin:0;font-size:.9375rem;line-height:1.5}
 .service-heading{font-size:1.0625rem;line-height:1.5;margin:0 0 10px;font-weight:700}
-@media(max-width:600px){.award-card{padding:16px;column-gap:10px}.award-card h3{font-size:1rem}.award-card p{font-size:.875rem}.award-card time{font-size:.8125rem;padding:3px 7px}}
 @media(max-width:600px){.history-list{padding-left:18px}.history-list h3{font-size:.9375rem}.history-list p{font-size:.875rem}.history-list time{font-size:.875rem}.history-list .entry-separator{margin:0 3px}.history-list .department{display:block;margin-top:2px}.history-list .department::before{content:""}.business-entries h4{font-size:.875rem}.business-entries p{font-size:.8125rem;line-height:1.5}.business-entries .inline-logo{max-width:38px}.business-entries>li{margin-bottom:12px}.compact-section{margin-bottom:28px}}
