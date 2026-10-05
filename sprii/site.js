@@ -45,3 +45,21 @@ document.getElementById('copy-citation').addEventListener('click', async () => {
     status.textContent = 'Select the citation above to copy it.';
   }
 });
+
+// Keep the environment overview compact while allowing stable links to each setting.
+const settingDetails = Array.from(document.querySelectorAll('.setting'));
+settingDetails.forEach(detail => {
+  detail.addEventListener('toggle', () => {
+    if (!detail.open) return;
+    settingDetails.forEach(other => { if (other !== detail) other.open = false; });
+  });
+});
+function revealLinkedSetting() {
+  const detail = document.getElementById(location.hash.slice(1));
+  if (detail && detail.classList.contains('setting')) {
+    detail.open = true;
+    requestAnimationFrame(() => detail.scrollIntoView({block: 'start'}));
+  }
+}
+window.addEventListener('hashchange', revealLinkedSetting);
+revealLinkedSetting();
