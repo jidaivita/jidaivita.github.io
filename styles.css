@@ -71,6 +71,7 @@ nav a:hover{color:var(--accent)}
 .authors strong{white-space:nowrap;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .venue{display:flex;align-items:baseline;gap:8px 14px;flex-wrap:wrap;font-size:.875rem;line-height:1.55;margin:9px 0 10px}.venue strong{color:var(--ink);font-weight:700}.venue span{color:var(--muted)}
 .publication-links{display:flex;gap:6px;font-size:.75rem;flex-wrap:wrap}
+.paper-summary+.publication-links{margin-top:10px}
 .main-column .publication-links a{border:1px solid #ccc;border-radius:4px;padding:1px 8px;color:#333;background:#fff;line-height:1.6;text-decoration:none}
 .main-column .publication-links a:hover{background:#f7f7f7;border-color:#999}
 footer{max-width:var(--page-width);margin:auto;padding:22px 32px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:.8125rem;color:var(--muted)}
